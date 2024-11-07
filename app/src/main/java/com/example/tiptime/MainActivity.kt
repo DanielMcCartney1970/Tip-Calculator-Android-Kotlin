@@ -142,12 +142,13 @@ fun EditNumberField(
     onValueChanged: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
+    val amountInput = "0"
     TextField(
-        value = value,
+        value = amountInput,
         singleLine = true,
         leadingIcon = { Icon(painter = painterResource(id = leadingIcon), null) },
         modifier = modifier,
-        onValueChange = onValueChanged,
+        onValueChange = {},
         label = { Text(stringResource(label)) },
         keyboardOptions = keyboardOptions
     )
