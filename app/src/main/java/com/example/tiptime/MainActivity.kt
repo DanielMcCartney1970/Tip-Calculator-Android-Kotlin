@@ -142,7 +142,7 @@ fun EditNumberField(
     onValueChanged: (String) -> Unit,
     modifier: Modifier = Modifier
 ) {
-    val amountInput = "0"
+    val amountInput = "0" // dapat di tulis juga -> var amountInput = mutableStateOf("0")
     TextField(
         value = amountInput,
         singleLine = true,
